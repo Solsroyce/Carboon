@@ -4,12 +4,13 @@ html, body{
 
 body{
 	font-family: "Tahoma";
+	font-size: 10px;
 }
 
 #paralax{
 	width: 100%;
 	background-color: #e0d9d9;
-	height: 400px;
+	height: 405px;
 	position: absolute;
 }
 
@@ -36,18 +37,88 @@ body{
 }
 
 #page-container > #widget-bar{
-	height: 50px;
+	height: 5.5em;
 	width: 100%;
 }
 
+#page-container > #widget-bar > #widget-container{
+	float: right;
+	width: 40em;
+	padding: 1em;
+}
+
+#page-container > #widget-bar > #widget-container > #search{
+	float: left;
+}
+
+#page-container > #widget-bar > #widget-container > #search > input{
+	height: 2.5em;
+}
+
+#page-container > #widget-bar > #widget-container > #social-media-container{
+	width: 20em;
+	float: right;
+}
+
+#page-container > #widget-bar > #widget-container > #social-media-container > img{
+	width: 2.5em;
+	height: 2.5em;
+	float: right;
+	background-color: #777;
+	padding: 0.5em;
+	margin-left: 0.5em;
+}
+
+#page-container > #widget-bar > #widget-container > #social-media-container > img:hover{
+	background-color: #999;
+}
+
 #page-container > #navigation{
-	height: 50px;
+	height: 5em;
 	width: 100%;
 	background-color: #bfbfbf;
 }
 
+#page-container > #navigation > #hamburger{
+	height: 5em;
+	width: 5em;
+	background-color: #888;
+	float: left;
+	background: no-repeat url("../src/hamburger1.png");
+	background-size: 60% 60%;
+	background-position: 50%;
+}
+
+#page-container > #navigation > #hamburger:hover{
+	background-color: #999;
+}
+
+#page-container > #navigation > #logo{
+	width: 10%;
+	height: 5em;
+}
+
+#page-container > #navigation > #main-categories{
+	float: right;
+	width: 80%;
+}
+
+#page-container > #navigation > #main-categories > .category{
+	float: left;
+	display: block;
+	height: 1em;
+	padding: 2em;
+	width: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+
+#page-container > #navigation > #main-categories > .category:hover{
+	background-color: #999;
+}
+
 #page-container > #cover{
-	height: 300px;
+	height: 30em;
 	width: 100%;
 }
 
@@ -72,20 +143,20 @@ body{
 }
 
 #page-container > #carousel-logo{
-	height: 50px;
+	height: 5em;
 	width: 100%;
 	background-color: #c2b4b4;
 }
 
 #page-container > #carousel-logo > div{
 	width: 80%;
-	height: 50px;
+	height: 5em;
 	background-color: #e0dfd9;
 	margin: auto;
 }
 
 #page-container > #subnavigation{
-	height: 40px;
+	height: 4em;
 	width: 100%;
 	background-color: #d1c6c6;
 }
@@ -95,6 +166,6 @@ body{
 	width: 1024px;
 	background-color: #f2f2f2;
 	position: absolute;
-	top: 0px;
+	top: 0em;
 	z-index: -4;
 }
