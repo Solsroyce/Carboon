@@ -1,0 +1,118 @@
+body{
+	width: 100%;
+	font-size: 50px;
+	font-family: "Tahoma";
+}
+
+body > #carbon-main-menu{
+	width: 100%;
+	background-color: #666;
+	height: 200px;
+	float: left;
+}
+
+body > #carbon-main-menu > .main-menu-button{
+	width: 25%;
+	background-color: #333;
+	float: left;
+	color: #fff;
+	height: inherit;
+}
+
+body > #carbon-main-menu > .main-menu-button:last-child{
+	float: right;
+	background-color: #777;
+}
+
+body > #categories{
+	height: 200px;
+	background-color: #555;
+	float: left;
+}
+
+body > #categories > ul{
+	background-color: #555;
+	width: 100%;
+}
+
+body > #categories > ul > li{
+	width: 21.9%;
+	float: left;
+	background-color: #777;
+	height: 185px;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 15px;
+}
+
+body > #categories > ul > li > div{
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	margin: auto;
+	border-radius: 50%;
+}
+
+body > #categories > ul > li > p{
+	color: #fff;
+}
+
+body > #categories #button-categories-current{
+	background-color: #888;
+}
+
+body > .accordion-menu{
+	float: left;
+	width: 100%;
+}
+
+.icon-dropdown{
+	background: url(../src/drop25.svg);
+	background-size: 1em;
+	height: 1em;
+	width: 1em;
+	float: left;
+	margin-top: -2.5em;
+	margin-left: 17em;
+}
+
+body > .accordion-menu > .accordion-item > p{
+	width: 100% - 50px;
+	background-color: #777;
+	height: 2.5em;
+	padding-left: 50px;
+	color: #fff;
+	font-weight: bold;
+	vertical-align: middle;
+	padding-top: 1.5em;
+}
+body > .accordion-menu > .accordion-item > h1, body > .accordion-menu > .accordion-item > ul{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+body > .accordion-menu > .accordion-item > h1{
+	font-weight: bold;
+}
+
+body > .accordion-menu > .accordion-item > h1, body > .accordion-menu > .accordion-item > ul{
+	display: none;
+}
+
+body > #carbon-main-menu > .main-menu-button:nth-child(1){
+	background: url(../src/back.svg) no-repeat #444;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+body > #carbon-main-menu > .main-menu-button:nth-child(2){
+	background: url(../src/home.svg) no-repeat #444;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+body > #carbon-main-menu > .main-menu-button:nth-child(3){
+	background: url(../src/profile.svg) no-repeat #444;
+	background-size: 100%;
+	background-position: 50% 50%;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<meta charset="UTF-8">
+	<title>Home mobile</title>
+</head>
+<body>
+	<nav id="carbon-main-menu">
+		<div class="main-menu-button"></div>
+		<div class="main-menu-button"></div>
+		<div class="main-menu-button"></div>
+	</nav>
+
+	<nav id="categories">
+		<ul>
+			<li id="button-categories-current" class="button-categories">
+				<div class="img-categories"></div>
+				<p class="text-categories">Winkelen</p>
+			</li>
+			<li class="button-categories">
+				<div class="img-categories"></div>
+				<p class="text-categories">Wonen & leven</p>
+			</li>
+			<li class="button-categories">
+				<div class="img-categories"></div>
+				<p class="text-categories">Toekomst 2020</p>
+			</li>
+			<li class="button-categories">
+				<div class="img-categories"></div>
+				<p class="text-categories">Ondernemen</p>
+			</li>
+		</ul>
+	</nav>
+
+	<ul class="accordion-menu">
+		<li class="accordion-item">
+			<p>Albert Heijn</p>
+			<div class="icon-dropdown"></div>
+			<h1>Openingstijden</h1>
+			<ul>
+				<li>ma</li>
+				<li>di</li>
+				<li>wo</li>
+				<li>do</li>
+				<li>vr</li>
+			</ul>
+			 
+		</li>
+		<li class="accordion-item">
+			<p>Jumbo</p>
+			<div class="icon-dropdown"></div>
+			<h1>Openingstijden</h1>
+			<ul>
+				<li>ma</li>
+				<li>di</li>
+				<li>wo</li>
+				<li>do</li>
+				<li>vr</li>
+			</ul>
+			 
+		</li>
+		<li class="accordion-item">
+			<p>Ritt</p>
+			<div class="icon-dropdown"></div>
+			<h1>Openingstijden</h1>
+			<ul>
+				<li>ma</li>
+				<li>di</li>
+				<li>wo</li>
+				<li>do</li>
+				<li>vr</li>
+			</ul>
+			 
+		</li>
+	</ul>
+
+	<script>
+
+		$(".accordion-item:nth-child(1)").click( function(){
+			$(".accordion-item:nth-child(3) > h1, .accordion-item:nth-child(3) > ul, .accordion-item:nth-child(2) > h1, .accordion-item:nth-child(2) > ul").hide();
+			$(".accordion-item:nth-child(1) > h1, .accordion-item:nth-child(1) > ul").toggle();
+		});
+
+		$(".accordion-item:nth-child(2)").click( function(){
+			$(".accordion-item:nth-child(3) > h1, .accordion-item:nth-child(3) > ul, .accordion-item:nth-child(1) > h1, .accordion-item:nth-child(1) > ul").hide();
+			$(".accordion-item:nth-child(2) > h1, .accordion-item:nth-child(2) > ul").toggle();
+		});
+
+		$(".accordion-item:nth-child(3)").click( function(){
+			$(".accordion-item:nth-child(1) > h1, .accordion-item:nth-child(1) > ul, .accordion-item:nth-child(2) > h1, .accordion-item:nth-child(2) > ul").hide();
+			$(".accordion-item:nth-child(3) > h1, .accordion-item:nth-child(3) > ul").toggle();
+		});
+
+	</script>
+
+</body>
+</html>

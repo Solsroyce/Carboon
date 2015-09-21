@@ -1,0 +1,100 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	font-family: "Tahoma";
+}
+
+#paralax{
+	width: 100%;
+	background-color: #e0d9d9;
+	height: 400px;
+	position: absolute;
+}
+
+#background{
+	background-color: #e6e6e6;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -5;
+}
+
+#superior-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#page-container{
+	width: 1024px;
+	height: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page-container > #widget-bar{
+	height: 50px;
+	width: 100%;
+}
+
+#page-container > #navigation{
+	height: 50px;
+	width: 100%;
+	background-color: #bfbfbf;
+}
+
+#page-container > #cover{
+	height: 300px;
+	width: 100%;
+}
+
+#page-container > #cover > div{
+	width: 40%;
+	margin-left: 10%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#page-container > #cover > div > h1{
+	font-size: 1.2em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#page-container > #cover > div > p{
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+#page-container > #carousel-logo{
+	height: 50px;
+	width: 100%;
+	background-color: #c2b4b4;
+}
+
+#page-container > #carousel-logo > div{
+	width: 80%;
+	height: 50px;
+	background-color: #e0dfd9;
+	margin: auto;
+}
+
+#page-container > #subnavigation{
+	height: 40px;
+	width: 100%;
+	background-color: #d1c6c6;
+}
+
+#page-container > #content{
+	height: 100%;
+	width: 1024px;
+	background-color: #f2f2f2;
+	position: absolute;
+	top: 0px;
+	z-index: -4;
+}
